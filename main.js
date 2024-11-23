@@ -69,5 +69,7 @@ function main() {
     slider1.style.left = `${percentage}%`;
     imgLeft.style.clipPath = `inset(0 ${100 - percentage}% 0 0)`;
   });
+  close-menu.onclick = closeMenu();
+  menu.onclick = openMenu();
 }
 main();
