@@ -117,16 +117,12 @@
   margin: 0;
   align-self: center;
 }
-.container .tickets .center .right .counter a {
-  text-decoration: none;
-}
 .container .tickets .center .right .counter button {
   font-size: 32px;
   border: none;
   background-color: transparent;
   align-self: center;
   color: #030303;
-  text-decoration: none;
 }
 .container .tickets .center h3 {
   font-family: "Roboto", sans-serif;
@@ -140,6 +136,9 @@
   padding-bottom: 43%;
   display: flex;
   justify-content: space-between;
+}
+.container .tickets .center a {
+  text-decoration: none;
 }
 .container .tickets .center .butt {
   font-family: "Roboto", sans-serif;
