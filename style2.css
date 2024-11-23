@@ -1,0 +1,396 @@
+.container {
+  max-width: 1480px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container .tickets .bottom {
+  border-bottom: solid;
+  border-color: #710707;
+  border-width: 3px;
+  margin-bottom: 5vw;
+  margin-top: 3%;
+}
+.container .tickets .bottom a {
+  text-decoration: none;
+}
+.container .tickets .bottom p {
+  font-family: "Forum", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2vw;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #030303;
+}
+.container .tickets h1 {
+  font-family: "Forum", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4.16vw;
+  line-height: 90px;
+  letter-spacing: 5px;
+  color: #9d8665;
+  padding-bottom: 1.74vw;
+}
+.container .tickets .center {
+  display: flex;
+  justify-content: space-between;
+}
+.container .tickets .center .left {
+  display: flex;
+}
+.container .tickets .center .left .picture {
+  width: 700px;
+}
+.container .tickets .center .left .picture img {
+  width: 100%;
+}
+.container .tickets .center .left .type {
+  padding-left: 7%;
+  width: 43%;
+}
+.container .tickets .center .left .type h1 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.45vw;
+  line-height: 33px;
+  color: #030303;
+  padding-bottom: 15%;
+}
+.container .tickets .center .left .type label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10%;
+}
+.container .tickets .center .left .type label span {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.145vw;
+  line-height: 26px;
+  margin-left: 3%;
+  color: #030303;
+}
+.container .tickets .center .right h2 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  color: #030303;
+  margin-bottom: 10%;
+}
+.container .tickets .center .right p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  color: #030303;
+  margin-bottom: 7%;
+  margin-top: 6%;
+}
+.container .tickets .center .right .counter {
+  display: flex;
+  justify-content: space-around;
+  border: solid black;
+  border-width: 2px;
+  width: 175px;
+  height: 50px;
+}
+.container .tickets .center .right .counter p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  color: #030303;
+  margin: 0;
+  align-self: center;
+}
+.container .tickets .center .right .counter button {
+  font-size: 32px;
+  border: none;
+  background-color: transparent;
+  align-self: center;
+  color: #030303;
+}
+.container .tickets .center h3 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 1.65px;
+  color: #030303;
+  padding-top: 20%;
+  padding-bottom: 43%;
+  display: flex;
+  justify-content: space-between;
+}
+.container .tickets .center .butt {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  display: flex;
+  letter-spacing: 2px;
+  justify-content: center;
+  color: #ffffff;
+  border: none;
+  background-color: #030303;
+  width: 175px;
+  height: 50px;
+  align-items: center;
+}
+
+.parallax {
+  height: 30vw;
+  width: 100%;
+  padding-bottom: 3%;
+  padding-top: 3%;
+}
+
+.paral {
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url(images2/parallax.jpg);
+  height: 100%;
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  background-color: #030303;
+}
+footer .container .top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4%;
+}
+footer .container .top .Logo {
+  display: flex;
+  padding-top: 5%;
+}
+footer .container .top .Logo img {
+  height: 26px;
+}
+footer .container .top .Logo h1 {
+  margin-top: 0;
+  width: 125px;
+  height: 31px;
+  margin-left: 25px;
+  font-family: "Forum", serif;
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 5px;
+  color: #ffffff;
+}
+footer .container .list {
+  margin-top: 6%;
+  width: 24.5%;
+  height: 128px;
+}
+footer .container .list ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+}
+footer .container .list ul span {
+  display: grid;
+  gap: 15%;
+}
+footer .container a {
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-decoration: none;
+}
+footer .container li {
+  display: inline;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 1.145vw;
+}
+footer .container .socialnet {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 11%;
+}
+
+.line {
+  width: 100%;
+  background-color: #ffffff;
+  height: 2px;
+}
+
+.container .bottom {
+  height: 5.5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .bottom a {
+  text-decoration: none;
+}
+.container .bottom p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 1.145vw;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+@media all and (max-width: 1570px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media all and (max-width: 1024px) {
+  footer .container .top li {
+    font-size: 2.15vw;
+  }
+  .container .tickets .center h3 {
+    padding-bottom: 0;
+  }
+  .container .tickets .center .left .type {
+    display: none;
+  }
+  .container .tickets .center .left .picture {
+    width: 63vw;
+  }
+  .container .tickets .center .right {
+    position: relative;
+  }
+  .container .tickets .center .right .butt {
+    position: absolute;
+    bottom: 0;
+  }
+}
+@media all and (max-width: 768px) {
+  footer .container .top {
+    flex-direction: column;
+  }
+  footer .container .top .list {
+    align-self: flex-end;
+    width: 40%;
+    margin-top: 0;
+  }
+  footer .container .top .socialnet {
+    align-self: flex-end;
+    width: 40%;
+  }
+  .container .tickets .center h3 {
+    margin-bottom: 100px;
+  }
+  .container .tickets .center .left .picture {
+    width: 100%;
+  }
+  .container .tickets .right {
+    margin-left: 20px;
+  }
+}
+.line {
+  width: 100%;
+  background-color: #ffffff;
+  height: 2px;
+}
+
+.container .bottom p {
+  font-size: 1.5vw;
+}
+.container .container .tickets .center {
+  flex-direction: column;
+}
+
+@media all and (max-width: 420px) {
+  footer .container .top {
+    flex-direction: column;
+  }
+  footer .container .top li {
+    width: 100%;
+    text-align: start;
+  }
+  footer .container .top .list {
+    margin-top: 10%;
+    display: flex;
+    align-self: center;
+    width: 100%;
+    height: 15vw;
+    flex-direction: row;
+  }
+  footer .container .top .list ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+  }
+  footer .container .top .list ul span {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    justify-content: space-between;
+    gap: 30%;
+  }
+  footer .container .top .socialnet {
+    align-self: center;
+    width: 60%;
+  }
+  footer .line {
+    width: 100%;
+    background-color: #ffffff;
+    height: 2px;
+  }
+  footer .container .bottom p {
+    font-size: 1.5vw;
+  }
+  .container .tickets .center {
+    flex-direction: column;
+  }
+  .container .tickets .center .left .picture {
+    position: relative;
+    width: 470px;
+    height: 160px;
+  }
+  .container .tickets .center .left .picture img {
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, 50%);
+    bottom: 50%;
+  }
+  .container .tickets .center .right {
+    align-self: center;
+  }
+  .container .tickets .center .right h2,
+  .container .tickets .center .right p,
+  .container .tickets .center .right h3 {
+    font-size: 16px;
+    margin: 10px;
+    padding: 0;
+    text-align: center;
+  }
+  .container .tickets .center .right .butt {
+    position: relative;
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=style2.css.map */

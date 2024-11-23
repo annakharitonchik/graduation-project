@@ -1,0 +1,873 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1480px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+nav {
+  height: 7.8125vw;
+  width: 100%;
+  background-color: #030303;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: 80px;
+  justify-content: space-between;
+}
+
+.Logo {
+  display: flex;
+}
+.Logo img {
+  height: 26px;
+}
+.Logo h1 {
+  width: 125px;
+  height: 31px;
+  margin-left: 25px;
+  font-family: "Forum", serif;
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 5px;
+  color: #ffffff;
+}
+
+.Navigation {
+  height: 26px;
+  max-width: 775px;
+  margin-left: auto;
+  width: 100%;
+}
+.Navigation svg {
+  display: none;
+}
+.Navigation .list .img15 {
+  display: none;
+}
+.Navigation .list .img16-17 {
+  display: none;
+}
+.Navigation .list .socialnet {
+  display: none;
+}
+.Navigation .list .imgfor420 {
+  display: none;
+}
+.Navigation .list li:hover {
+  transform: scale(1.2);
+}
+.Navigation .list ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.Navigation .list a {
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.Navigation .list li {
+  display: inline;
+  height: 26px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 22px;
+  transition: transform 0.5s;
+}
+
+main {
+  background-color: #030303;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 43.85vw;
+}
+main .wrapper {
+  display: flex;
+  align-items: center;
+  height: 45vw;
+}
+main .left {
+  margin-bottom: 30px;
+  width: 43vw;
+  color: #ffffff;
+  position: relative;
+  z-index: 2;
+  /* Welcome to the Louvre */
+  /* Discover the Louvre */
+}
+main .left h3 {
+  font-family: "Forum", serif;
+  font-weight: 400;
+  font-size: 5vw;
+  letter-spacing: 5px;
+}
+main .left h3 span {
+  display: block;
+}
+main .left p {
+  /* From the castle to the museum */
+  margin-top: 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.45vw;
+  letter-spacing: 2px;
+}
+main .left button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.145vw;
+  letter-spacing: 2px;
+  color: #ffffff;
+  /* Rectangle */
+  border: none;
+  width: 25vw;
+  height: 5.21vw;
+  background: #710707;
+  border-radius: 10px;
+  margin-top: 5.21vw;
+  transition: transform 0.5s;
+}
+main .left button:hover {
+  background: #9d8665;
+  transform: scale(1.05);
+}
+main .container {
+  position: relative;
+  height: 100%;
+}
+main .right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 53vw;
+}
+main .right .gradient {
+  width: 100%;
+  height: 40vw;
+  background: linear-gradient(
+    90deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0.5) 16.19%,
+    rgba(0, 0, 0, 0) 31%
+  );
+  z-index: 1;
+  position: absolute;
+}
+main .right .slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  touch-action: pan-y;
+}
+main .right .slider-list {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+}
+main .right .slider-list.grab {
+  cursor: grab;
+}
+main .right .slider-list.grabbing {
+  cursor: grabbing;
+}
+main .right .slider-track {
+  display: flex;
+}
+main .right .slide {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  display: flex;
+}
+main .right .slide img {
+  width: 100%;
+}
+main .slides {
+  height: 7vw;
+  background-color: #030303;
+  width: 41.67vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-self: flex-end;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 4;
+}
+main .slides p {
+  width: 76px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.5vw;
+  color: #ffffff;
+  text-align: center;
+}
+main .slides .square ul {
+  height: 16px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5vw;
+}
+main .slides .arrows {
+  width: 6vw;
+}
+main .slides .arrows ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2vw;
+  z-index: 3;
+  position: relative;
+}
+main .slides .arrows li:hover path {
+  fill: #9d8665;
+}
+
+.Virtual-tour {
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  margin-top: 5.2vw;
+}
+.Virtual-tour .bottom {
+  border-bottom: solid;
+  border-color: #710707;
+  border-width: 3px;
+  margin-bottom: 78px;
+}
+.Virtual-tour h1 {
+  font-family: "Forum", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4.16vw;
+  line-height: 90px;
+  letter-spacing: 5px;
+  color: #9d8665;
+  padding-bottom: 1.74vw;
+}
+.Virtual-tour .name {
+  font-family: "Forum", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.67vw;
+  line-height: 35px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  margin-top: 1.74vw;
+}
+.Virtual-tour p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 1.145vw;
+  line-height: 26px;
+  color: #030303;
+  padding-bottom: 2vw;
+  margin-top: 10px;
+}
+.Virtual-tour p span {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 0.9375vw;
+  line-height: 21px;
+  color: #030303;
+  margin-top: 0.685vw;
+}
+.Virtual-tour .inf {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1vw;
+}
+.Virtual-tour .width {
+  width: 440px;
+}
+.Virtual-tour img {
+  width: 100%;
+  transition: transform 0.5s;
+}
+.Virtual-tour img:hover {
+  transform: scale(1.1);
+}
+.Virtual-tour .dred {
+  width: 20.83vw;
+  height: 2px;
+  background-color: #710707;
+}
+
+.Picture-explore {
+  height: 100%;
+  background-color: #030303;
+  padding-top: 3.9vw;
+  padding-bottom: 3.9vw;
+  margin-top: 4vw;
+}
+.Picture-explore .content {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.Picture-explore .content .left p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.145vw;
+  line-height: 38px;
+  color: #ffffff;
+  width: 34.375vw;
+  padding-top: 1.3vw;
+  margin-right: 50px;
+}
+.Picture-explore .content .left p span {
+  color: #caaa7d;
+}
+.Picture-explore .content .left .pict {
+  width: 34.14vw;
+  border-bottom: solid;
+  border-color: #710707;
+  border-width: 3px;
+  margin-top: 4vw;
+  margin-bottom: 2.6vw;
+}
+.Picture-explore .content .left .pict h1 {
+  font-family: "Forum", serif, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4.16vw;
+  line-height: 75px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-bottom: 1.3vw;
+  color: #ffffff;
+}
+.Picture-explore .content .right {
+  position: relative;
+  overflow: hidden;
+  width: 720px;
+  height: 700px;
+}
+.Picture-explore .content .right .all {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.Picture-explore .content .right .all .img-left {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  clip-path: inset(0 50% 0 0);
+  z-index: 4;
+}
+.Picture-explore .content .right .all .img-right {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.Picture-explore .content .right .slider1 {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  cursor: ew-resize;
+}
+
+.video-journey {
+  text-align: center;
+  margin-top: 4vw;
+  margin-bottom: 4vw;
+  /* Video journey */
+  /* Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code */
+}
+.video-journey .text {
+  display: flex;
+  justify-content: space-between;
+}
+.video-journey h1 {
+  font-family: "Forum", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4.16vw;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #9d8665;
+}
+.video-journey p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.145vw;
+  line-height: 38px;
+  color: #030303;
+  width: 37.5vw;
+  text-align: start;
+}
+
+.main-video {
+  position: relative;
+  margin: 20px auto;
+  height: 46.876vw;
+}
+.main-video iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.video-slider {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 2vw;
+  margin-bottom: 20px;
+}
+.video-slider .video-slide {
+  width: 100%;
+  height: 254px;
+}
+.video-slider .video-slide iframe {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  background-color: #030303;
+}
+footer .container .top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4%;
+}
+footer .container .top .Logo {
+  padding-top: 5%;
+}
+footer .container .top .list {
+  margin-top: 6%;
+  width: 24.5%;
+  height: 128px;
+}
+footer .container .top .list ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+}
+footer .container .top .list ul span {
+  display: grid;
+  gap: 15%;
+}
+footer .container .top a {
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-decoration: none;
+}
+footer .container .top li {
+  display: inline;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 1.145vw;
+}
+footer .container .top .socialnet {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 11%;
+}
+footer .line {
+  width: 100%;
+  background-color: #ffffff;
+  height: 2px;
+}
+footer .container .bottom {
+  height: 5.5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .container .bottom a {
+  text-decoration: none;
+}
+footer .container .bottom p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 1.145vw;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+@media all and (max-width: 1570px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  main .right {
+    right: 40px;
+  }
+  main .slides {
+    right: 40px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .Navigation {
+    width: auto;
+  }
+  .Navigation svg {
+    display: block;
+  }
+  .Navigation .close-menu {
+    display: none;
+  }
+  .Navigation .menu {
+    display: inline-flex;
+    align-items: center;
+    height: 31px;
+    position: relative;
+    z-index: 4;
+  }
+  .Navigation .list {
+    display: none;
+    width: 46.15vw;
+    height: 41vw;
+    background-color: #030303;
+    position: absolute;
+    right: 40px;
+    top: 59.5px;
+    z-index: 3;
+    left: 0;
+    padding-top: 20px;
+  }
+  .Navigation .list ul {
+    display: flex;
+    margin-top: 2vw;
+    flex-direction: column;
+    gap: 2vw;
+    justify-content: flex-start;
+    margin-left: 8vw;
+    padding-left: 53px;
+  }
+  .Navigation .list ul li {
+    font-size: 1.95vw;
+  }
+  .Navigation .list ul a::after {
+    content: url(/images/arrowright.svg);
+    position: relative;
+    left: 10px;
+  }
+  main .slides {
+    width: 100%;
+    padding-left: 48.35vw;
+    gap: 45px;
+    padding-right: 5vw;
+    gap: 7vw;
+  }
+  main .slides p {
+    font-size: 2vw;
+  }
+  main .right .gradient {
+    background: linear-gradient(
+      90deg,
+      #000000 4%,
+      rgba(0, 0, 0, 0.5) 16.19%,
+      rgba(0, 0, 0, 0) 31%
+    );
+  }
+  .Picture-explore .content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Picture-explore .content .left {
+    align-self: flex-start;
+    width: 100%;
+  }
+  .Picture-explore .content .left .pict {
+    width: 100%;
+  }
+  .Picture-explore .content .left p {
+    width: 100%;
+    font-size: 1.95vw;
+  }
+  .Picture-explore .content .left p:last-child {
+    display: none;
+  }
+  .video-journey .text .righttext p {
+    display: none;
+  }
+  .video-slider .video-slide {
+    height: 170px;
+  }
+  footer .container .top li {
+    font-size: 2.15vw;
+  }
+}
+@media all and (max-width: 768px) {
+  main {
+    height: 112vw;
+  }
+  main .left {
+    text-align: center;
+    width: 100%;
+  }
+  main .left button {
+    display: none;
+  }
+  main .left p {
+    font-size: 2.5vw;
+  }
+  main .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  main .right {
+    right: auto;
+    top: 28vw;
+    width: 94.8vw;
+  }
+  main .right .gradient {
+    display: none;
+  }
+  main .right .img {
+    position: relative;
+  }
+  main .slides {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    bottom: 3vw;
+    transition: none;
+  }
+  main .slides p {
+    font-size: 3vw;
+  }
+  nav {
+    height: 15vw;
+  }
+  .Navigation ul {
+    transition: none;
+    margin-left: 0;
+    align-self: flex-start;
+  }
+  .Navigation ul li {
+    font-size: 3vw;
+  }
+  .Navigation .list {
+    width: 100%;
+    height: auto;
+    right: 0;
+    top: 13vw;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Navigation .list .img15 {
+    display: block;
+    padding-top: 4.5vw;
+    text-align: center;
+  }
+  .Navigation .list .img15 img {
+    width: 86vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .Navigation .list .img16-17 {
+    display: flex;
+    justify-content: space-between;
+    width: 86vw;
+    margin-bottom: 4.5vw;
+    border-bottom: solid;
+    border-color: #ffffff;
+    padding-bottom: 4.5vw;
+    border-width: 1px;
+    padding-top: 4.5vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .Navigation .list .img16-17 img {
+    width: 41vw;
+  }
+  .Navigation .list .socialnet {
+    display: flex;
+    width: 45vw;
+    justify-content: space-between;
+    padding-bottom: 3vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .Navigation .list .socialnet img {
+    width: 6.25vw;
+  }
+  .Virtual-tour h1 {
+    font-size: 8.2vw;
+  }
+  .Virtual-tour .dred {
+    width: 39vw;
+  }
+  .Virtual-tour p {
+    font-size: 3vw;
+  }
+  .Virtual-tour p span {
+    font-size: 2.5vw;
+  }
+  .Virtual-tour .inf .name {
+    font-size: 4.7vw;
+  }
+  .Virtual-tour .inf .width {
+    width: 100%;
+  }
+  .Picture-explore .content .left p {
+    display: none;
+  }
+  .Picture-explore .content .right {
+    width: 94.79vw;
+  }
+  .video-slider .video-slide:last-child {
+    display: none;
+  }
+  .video-slider .video-slide {
+    height: 199px;
+  }
+  .slider-indicators {
+    gap: 25px;
+  }
+  footer .container .top {
+    flex-direction: column;
+  }
+  footer .container .top .list {
+    align-self: flex-end;
+    width: 40%;
+    margin-top: 0;
+  }
+  footer .container .top .socialnet {
+    align-self: flex-end;
+    width: 40%;
+  }
+  footer .line {
+    width: 100%;
+    background-color: #ffffff;
+    height: 2px;
+  }
+  footer .container .bottom p {
+    font-size: 1.5vw;
+  }
+}
+@media all and (max-width: 420px) {
+  .Navigation .list {
+    display: flex;
+  }
+  .Navigation .list ul li {
+    font-size: 16px;
+  }
+  .Navigation .list .imgfor420 {
+    display: flex;
+    width: 74vw;
+    justify-content: space-between;
+    padding-top: 4.5vw;
+    padding-bottom: 3.5vw;
+    border-bottom: solid;
+    border-color: #ffffff;
+    border-width: 1px;
+    margin-bottom: 4.5vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .Navigation .list .imgfor420 img {
+    width: 22vw;
+  }
+  .Navigation .list .img15 {
+    display: none;
+  }
+  .Navigation .list .img16-17 {
+    display: none;
+  }
+  .Logo img {
+    height: 20px;
+  }
+  .Logo h1 {
+    font-size: 22px;
+  }
+  .Picture-explore .content .right {
+    width: 90vw;
+  }
+  .video-slider .video-slide {
+    height: 101px;
+  }
+  .text .lefttext {
+    height: 60px;
+  }
+  footer .container .top {
+    flex-direction: column;
+  }
+  footer .container .top li {
+    width: 100%;
+    text-align: start;
+  }
+  footer .container .top .list {
+    margin-top: 10%;
+    display: flex;
+    align-self: center;
+    width: 100%;
+    height: 15vw;
+    flex-direction: row;
+  }
+  footer .container .top .list ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+  }
+  footer .container .top .list ul span {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    justify-content: space-between;
+    gap: 30%;
+  }
+  footer .container .top .socialnet {
+    align-self: center;
+    width: 60%;
+  }
+  footer .line {
+    width: 100%;
+    background-color: #ffffff;
+    height: 2px;
+  }
+  footer .container .bottom p {
+    font-size: 1.5vw;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

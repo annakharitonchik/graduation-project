@@ -1,0 +1,342 @@
+@import "variables";
+.container {
+  max-width: 1480px;
+  width: 100%;
+  margin: 0 auto;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  .bottom {
+    border-bottom: solid;
+    border-color: #710707;
+    border-width: 3px;
+    margin-bottom: 5vw;
+    margin-top: 3%;
+    height: 5.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      text-decoration: none;
+    }
+    p {
+      font-family: $forum;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 2vw;
+      line-height: 90px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: $Bg-dark;
+    }
+    h1 {
+      font-family: $forum;
+      font-style: normal;
+      font-weight: 400;
+      font-size: $big-title;
+      line-height: 90px;
+      letter-spacing: 5px;
+      color: $Font-gold;
+      padding-bottom: 1.74vw;
+    }
+  }
+  .inf {
+    display: flex;
+    justify-content: space-between;
+    address {
+      h3 {
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: $title;
+        line-height: 33px;
+        margin-bottom: 15%;
+        color: $Bg-dark;
+        span {
+          padding-top: 3%;
+          display: block;
+        }
+      }
+      p,
+      a {
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: $text;
+        line-height: 26px;
+        color: $Bg-dark;
+        text-decoration: none;
+      }
+      p {
+        display: inline;
+      }
+    }
+  }
+  map {
+    width: 75%;
+    height: 40vw;
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+footer {
+  width: 100%;
+  background-color: $Bg-dark;
+  margin-top: 5%;
+  .container {
+    .top {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 4%;
+      .Logo {
+        display: flex;
+        padding-top: 5%;
+        //logo
+        img {
+          height: 26px;
+        }
+        //LOUVRE
+        h1 {
+          margin-top: 0;
+          width: 125px;
+          height: 31px;
+          margin-left: 25px;
+          font-family: $forum;
+          font-weight: 400;
+          font-size: 28px;
+          letter-spacing: 5px;
+          color: $White;
+        }
+      }
+    }
+    .list {
+      margin-top: 6%;
+      width: 24.5%;
+      height: 128px;
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 100%;
+        span {
+          display: grid;
+          gap: 15%;
+        }
+      }
+    }
+
+    a {
+      letter-spacing: 2px;
+      color: $White;
+      text-decoration: none;
+    }
+    li {
+      display: inline;
+      font-family: $roboto;
+      font-weight: 200;
+      font-size: $text;
+    }
+    .socialnet {
+      width: 300px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 11%;
+    }
+  }
+  .line {
+    width: 100%;
+    background-color: $White;
+    height: 2px;
+  }
+  .container {
+    .bottom1 {
+      height: 5.5vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      a {
+        text-decoration: none;
+      }
+      p {
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: 200;
+        font-size: $text;
+
+        letter-spacing: 2px;
+
+        color: $White;
+      }
+    }
+  }
+}
+
+// 1570px
+@media all and (max-width: 1570px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  footer {
+    .container {
+      .top {
+        li {
+          font-size: 2.15vw;
+        }
+      }
+    }
+  }
+}
+.container {
+  .tickets {
+    .center {
+      h3 {
+        padding-bottom: 0;
+      }
+      .left {
+        .type {
+          display: none;
+        }
+        .picture {
+          width: 63vw;
+        }
+      }
+      .right {
+        position: relative;
+        .butt {
+          position: absolute;
+          bottom: 0;
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 768px) {
+  footer {
+    .container {
+      .top {
+        flex-direction: column;
+        .list {
+          align-self: flex-end;
+          width: 40%;
+          margin-top: 0;
+        }
+        .socialnet {
+          align-self: flex-end;
+          width: 40%;
+        }
+      }
+    }
+  }
+  @media all and (max-width: 768px) {
+    .container {
+      .inf {
+        flex-direction: column;
+        map {
+          margin-top: 4%;
+          width: 100%;
+          height: 55vw;
+        }
+        address {
+          h3 {
+            font-size: 2.6vw;
+            margin-bottom: 2%;
+            span {
+              padding-top: 0;
+            }
+          }
+          a,
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    .container {
+      .top {
+        flex-direction: column;
+        .list {
+          align-self: flex-end;
+          width: 40%;
+          margin-top: 0;
+        }
+        .socialnet {
+          align-self: flex-end;
+          width: 40%;
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 420px) {
+  footer {
+    .container {
+      .top {
+        flex-direction: column;
+        li {
+          width: 100%;
+          text-align: start;
+        }
+        .list {
+          margin-top: 10%;
+          display: flex;
+          align-self: center;
+          width: 100%;
+          height: 15vw;
+          flex-direction: row;
+          ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            width: 100%;
+            span {
+              display: flex;
+              width: 100%;
+              height: 30px;
+              justify-content: space-between;
+              gap: 30%;
+            }
+          }
+        }
+        .socialnet {
+          align-self: center;
+          width: 60%;
+        }
+      }
+    }
+    .line {
+      width: 100%;
+      background-color: $White;
+      height: 2px;
+    }
+    .container {
+      .bottom1 {
+        p {
+          font-size: 1.5vw;
+        }
+      }
+    }
+  }
+  .container {
+    .inf {
+      address {
+        a,
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

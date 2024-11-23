@@ -1,0 +1,319 @@
+@import "variables";
+@keyframes move {
+  from {
+    margin-bottom: 0px;
+  }
+  to {
+    margin-top: 100px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1480px;
+  width: 100%;
+  margin: 0 auto;
+}
+.art-gallery {
+  background-color: $Bg-dark;
+  position: relative;
+  z-index: 5;
+  .container {
+    .name {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 7%;
+      h1 {
+        font-family: $forum;
+        font-style: normal;
+        font-weight: 400;
+        font-size: $big-title;
+        line-height: 90px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: $White;
+      }
+      a {
+        text-decoration: none;
+      }
+      p {
+        font-family: $forum;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2vw;
+        line-height: 90px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: $White;
+      }
+    }
+
+    .gallery {
+      position: relative;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      div {
+        width: 32%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5vw;
+        justify-content: space-between;
+        img {
+          width: 100%;
+        }
+      }
+      .column3 {
+        margin-top: 3%;
+        animation-direction: alternate;
+        animation-duration: 4s;
+        animation-name: move;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+      .column2 {
+        margin-top: 3%;
+        animation-direction: alternate-reverse;
+        animation-duration: 4s;
+        animation-name: move;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+      .column1 {
+        margin-top: 2%;
+        margin-top: 3%;
+        animation-direction: alternate;
+        animation-duration: 4s;
+        animation-name: move;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+    }
+    .gradient1 {
+      position: absolute;
+      width: 100%;
+      height: 101%;
+      left: 0;
+      top: 0;
+
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 87%);
+    }
+  }
+}
+
+//1570px
+@media all and (max-width: 1570px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+footer {
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  background-color: $Bg-dark;
+  .container {
+    .top {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 4%;
+      .Logo {
+        display: flex;
+        padding-top: 5%;
+        //logo
+        img {
+          height: 26px;
+        }
+        //LOUVRE
+        h1 {
+          width: 125px;
+          height: 31px;
+          margin-left: 25px;
+          font-family: $forum;
+          font-weight: 400;
+          font-size: 28px;
+          letter-spacing: 5px;
+          color: $White;
+        }
+      }
+    }
+    .list {
+      margin-top: 6%;
+      width: 24.5%;
+      height: 128px;
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 100%;
+        span {
+          display: grid;
+          gap: 15%;
+        }
+      }
+    }
+
+    a {
+      letter-spacing: 2px;
+      color: $White;
+      text-decoration: none;
+    }
+    li {
+      display: inline;
+      font-family: $roboto;
+      font-weight: 200;
+      font-size: $text;
+    }
+    .socialnet {
+      width: 300px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 11%;
+    }
+  }
+}
+.line {
+  width: 100%;
+  background-color: $White;
+  height: 2px;
+}
+.container {
+  .bottom {
+    height: 5.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      text-decoration: none;
+    }
+    p {
+      font-family: $roboto;
+      font-style: normal;
+      font-weight: 200;
+      font-size: $text;
+
+      letter-spacing: 2px;
+
+      color: $White;
+    }
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .art-gallery {
+    .container {
+      .gallery {
+        .column1 {
+          animation: none;
+          width: 47%;
+        }
+        .column2 {
+          animation: none;
+          width: 47%;
+        }
+        .column3 {
+          animation: none;
+          display: none;
+        }
+      }
+    }
+  }
+  footer {
+    position: relative;
+    .container {
+      .top {
+        li {
+          font-size: 2.15vw;
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 768px) {
+  footer {
+    .container {
+      .top {
+        flex-direction: column;
+        .list {
+          align-self: flex-end;
+          width: 40%;
+          margin-top: 0;
+        }
+        .socialnet {
+          align-self: flex-end;
+          width: 40%;
+        }
+      }
+    }
+    .line {
+      width: 100%;
+      background-color: $White;
+      height: 2px;
+    }
+    .container {
+      .bottom {
+        p {
+          font-size: 1.5vw;
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 420px) {
+  footer {
+    .container {
+      .top {
+        flex-direction: column;
+        li {
+          width: 100%;
+          text-align: start;
+        }
+        .list {
+          margin-top: 10%;
+          display: flex;
+          align-self: center;
+          width: 100%;
+          height: 15vw;
+          flex-direction: row;
+          ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            width: 100%;
+            
+            span {
+              display: flex;
+              width: 100%;
+              height: 30px;
+              justify-content: space-between;
+              gap: 30%;
+            }
+          }
+        }
+        .socialnet {
+          align-self: center;
+          width: 60%;
+        }
+      }
+    }
+    .line {
+      width: 100%;
+      background-color: $White;
+      height: 2px;
+    }
+    .container {
+      .bottom {
+        p {
+          font-size: 1.5vw;
+        }
+      }
+    }
+  }
+}

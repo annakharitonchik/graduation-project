@@ -1,0 +1,283 @@
+@keyframes move {
+  from {
+    margin-bottom: 0px;
+  }
+  to {
+    margin-top: 100px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1480px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.art-gallery {
+  background-color: #030303;
+  position: relative;
+  z-index: 5;
+}
+.art-gallery .container .name {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 7%;
+}
+.art-gallery .container .name h1 {
+  font-family: "Forum", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4.16vw;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.art-gallery .container .name a {
+  text-decoration: none;
+}
+.art-gallery .container .name p {
+  font-family: "Forum", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2vw;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.art-gallery .container .gallery {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.art-gallery .container .gallery div {
+  width: 32%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+  justify-content: space-between;
+}
+.art-gallery .container .gallery div img {
+  width: 100%;
+}
+.art-gallery .container .gallery .column3 {
+  margin-top: 3%;
+  animation-direction: alternate;
+  animation-duration: 4s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.art-gallery .container .gallery .column2 {
+  margin-top: 3%;
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.art-gallery .container .gallery .column1 {
+  margin-top: 2%;
+  margin-top: 3%;
+  animation-direction: alternate;
+  animation-duration: 4s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.art-gallery .container .gradient1 {
+  position: absolute;
+  width: 100%;
+  height: 101%;
+  left: 0;
+  top: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 87%);
+}
+
+@media all and (max-width: 1570px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+footer {
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  background-color: #030303;
+}
+footer .container .top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4%;
+}
+footer .container .top .Logo {
+  display: flex;
+  padding-top: 5%;
+}
+footer .container .top .Logo img {
+  height: 26px;
+}
+footer .container .top .Logo h1 {
+  width: 125px;
+  height: 31px;
+  margin-left: 25px;
+  font-family: "Forum", serif;
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 5px;
+  color: #ffffff;
+}
+footer .container .list {
+  margin-top: 6%;
+  width: 24.5%;
+  height: 128px;
+}
+footer .container .list ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+}
+footer .container .list ul span {
+  display: grid;
+  gap: 15%;
+}
+footer .container a {
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-decoration: none;
+}
+footer .container li {
+  display: inline;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 1.145vw;
+}
+footer .container .socialnet {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 11%;
+}
+
+.line {
+  width: 100%;
+  background-color: #ffffff;
+  height: 2px;
+}
+
+.container .bottom {
+  height: 5.5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .bottom a {
+  text-decoration: none;
+}
+.container .bottom p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 1.145vw;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+@media all and (max-width: 1024px) {
+  .art-gallery .container .gallery .column1 {
+    animation: none;
+    width: 47%;
+  }
+  .art-gallery .container .gallery .column2 {
+    animation: none;
+    width: 47%;
+  }
+  .art-gallery .container .gallery .column3 {
+    animation: none;
+    display: none;
+  }
+  footer {
+    position: relative;
+  }
+  footer .container .top li {
+    font-size: 2.15vw;
+  }
+}
+@media all and (max-width: 768px) {
+  footer .container .top {
+    flex-direction: column;
+  }
+  footer .container .top .list {
+    align-self: flex-end;
+    width: 40%;
+    margin-top: 0;
+  }
+  footer .container .top .socialnet {
+    align-self: flex-end;
+    width: 40%;
+  }
+  footer .line {
+    width: 100%;
+    background-color: #ffffff;
+    height: 2px;
+  }
+  footer .container .bottom p {
+    font-size: 1.5vw;
+  }
+}
+@media all and (max-width: 420px) {
+  footer .container .top {
+    flex-direction: column;
+  }
+  footer .container .top li {
+    width: 100%;
+    text-align: start;
+  }
+  footer .container .top .list {
+    margin-top: 10%;
+    display: flex;
+    align-self: center;
+    width: 100%;
+    height: 15vw;
+    flex-direction: row;
+  }
+  footer .container .top .list ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+  }
+  footer .container .top .list ul span {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    justify-content: space-between;
+    gap: 30%;
+  }
+  footer .container .top .socialnet {
+    align-self: center;
+    width: 60%;
+  }
+  footer .line {
+    width: 100%;
+    background-color: #ffffff;
+    height: 2px;
+  }
+  footer .container .bottom p {
+    font-size: 1.5vw;
+  }
+}
+
+/*# sourceMappingURL=style1.css.map */

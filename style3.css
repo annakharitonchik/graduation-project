@@ -1,0 +1,294 @@
+.container {
+  max-width: 1480px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container .bottom {
+  border-bottom: solid;
+  border-color: #710707;
+  border-width: 3px;
+  margin-bottom: 5vw;
+  margin-top: 3%;
+  height: 5.5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .bottom a {
+  text-decoration: none;
+}
+.container .bottom p {
+  font-family: "Forum", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2vw;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #030303;
+}
+.container .bottom h1 {
+  font-family: "Forum", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4.16vw;
+  line-height: 90px;
+  letter-spacing: 5px;
+  color: #9d8665;
+  padding-bottom: 1.74vw;
+}
+.container .inf {
+  display: flex;
+  justify-content: space-between;
+}
+.container .inf address h3 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.45vw;
+  line-height: 33px;
+  margin-bottom: 15%;
+  color: #030303;
+}
+.container .inf address h3 span {
+  padding-top: 3%;
+  display: block;
+}
+.container .inf address p,
+.container .inf address a {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.145vw;
+  line-height: 26px;
+  color: #030303;
+  text-decoration: none;
+}
+.container .inf address p {
+  display: inline;
+}
+.container map {
+  width: 75%;
+  height: 40vw;
+}
+.container map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  width: 100%;
+  background-color: #030303;
+  margin-top: 5%;
+}
+footer .container .top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4%;
+}
+footer .container .top .Logo {
+  display: flex;
+  padding-top: 5%;
+}
+footer .container .top .Logo img {
+  height: 26px;
+}
+footer .container .top .Logo h1 {
+  margin-top: 0;
+  width: 125px;
+  height: 31px;
+  margin-left: 25px;
+  font-family: "Forum", serif;
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 5px;
+  color: #ffffff;
+}
+footer .container .list {
+  margin-top: 6%;
+  width: 24.5%;
+  height: 128px;
+}
+footer .container .list ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+}
+footer .container .list ul span {
+  display: grid;
+  gap: 15%;
+}
+footer .container a {
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-decoration: none;
+}
+footer .container li {
+  display: inline;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 1.145vw;
+}
+footer .container .socialnet {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 11%;
+}
+footer .line {
+  width: 100%;
+  background-color: #ffffff;
+  height: 2px;
+}
+footer .container .bottom1 {
+  height: 5.5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .container .bottom1 a {
+  text-decoration: none;
+}
+footer .container .bottom1 p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 1.145vw;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+@media all and (max-width: 1570px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media all and (max-width: 1024px) {
+  footer .container .top li {
+    font-size: 2.15vw;
+  }
+}
+.container .tickets .center h3 {
+  padding-bottom: 0;
+}
+.container .tickets .center .left .type {
+  display: none;
+}
+.container .tickets .center .left .picture {
+  width: 63vw;
+}
+.container .tickets .center .right {
+  position: relative;
+}
+.container .tickets .center .right .butt {
+  position: absolute;
+  bottom: 0;
+}
+
+@media all and (max-width: 768px) {
+  footer .container .top {
+    flex-direction: column;
+  }
+  footer .container .top .list {
+    align-self: flex-end;
+    width: 40%;
+    margin-top: 0;
+  }
+  footer .container .top .socialnet {
+    align-self: flex-end;
+    width: 40%;
+  }
+}
+@media all and (max-width: 768px) and (max-width: 768px) {
+  .container .inf {
+    flex-direction: column;
+  }
+  .container .inf map {
+    margin-top: 4%;
+    width: 100%;
+    height: 55vw;
+  }
+  .container .inf address h3 {
+    font-size: 2.6vw;
+    margin-bottom: 2%;
+  }
+  .container .inf address h3 span {
+    padding-top: 0;
+  }
+  .container .inf address a,
+  .container .inf address p {
+    font-size: 18px;
+  }
+}
+@media all and (max-width: 768px) {
+  footer .container .top {
+    flex-direction: column;
+  }
+  footer .container .top .list {
+    align-self: flex-end;
+    width: 40%;
+    margin-top: 0;
+  }
+  footer .container .top .socialnet {
+    align-self: flex-end;
+    width: 40%;
+  }
+}
+@media all and (max-width: 420px) {
+  footer .container .top {
+    flex-direction: column;
+  }
+  footer .container .top li {
+    width: 100%;
+    text-align: start;
+  }
+  footer .container .top .list {
+    margin-top: 10%;
+    display: flex;
+    align-self: center;
+    width: 100%;
+    height: 15vw;
+    flex-direction: row;
+  }
+  footer .container .top .list ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+  }
+  footer .container .top .list ul span {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    justify-content: space-between;
+    gap: 30%;
+  }
+  footer .container .top .socialnet {
+    align-self: center;
+    width: 60%;
+  }
+  footer .line {
+    width: 100%;
+    background-color: #ffffff;
+    height: 2px;
+  }
+  footer .container .bottom1 p {
+    font-size: 1.5vw;
+  }
+  .container .inf address a,
+  .container .inf address p {
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=style3.css.map */

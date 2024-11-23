@@ -1,0 +1,456 @@
+@import "variables";
+.container {
+  max-width: 1480px;
+  width: 100%;
+  margin: 0 auto;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  .tickets {
+    .bottom {
+      border-bottom: solid;
+      border-color: $Dark-red;
+      border-width: 3px;
+      margin-bottom: 5vw;
+      margin-top: 3%;
+      a {
+        text-decoration: none;
+      }
+      p {
+        font-family: $forum;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2vw;
+        line-height: 90px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: $Bg-dark;
+      }
+    }
+    h1 {
+      font-family: $forum;
+      font-style: normal;
+      font-weight: 400;
+      font-size: $big-title;
+      line-height: 90px;
+      letter-spacing: 5px;
+      color: $Font-gold;
+      padding-bottom: 1.74vw;
+    }
+    .center {
+      display: flex;
+      justify-content: space-between;
+      .left {
+        display: flex;
+        .picture {
+          width: 700px;
+          img {
+            width: 100%;
+          }
+        }
+        .type {
+          padding-left: 7%;
+          width: 43%;
+          h1 {
+            font-family: $roboto;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1.45vw;
+            line-height: 33px;
+            color: $Bg-dark;
+            padding-bottom: 15%;
+          }
+          label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10%;
+            span {
+              font-family: $roboto;
+              font-style: normal;
+              font-weight: 300;
+              font-size: 1.145vw;
+              line-height: 26px;
+              margin-left: 3%;
+              color: $Bg-dark;
+            }
+          }
+        }
+      }
+      .right {
+        h2 {
+          font-family: $roboto;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 28px;
+          line-height: 33px;
+          color: $Bg-dark;
+          margin-bottom: 10%;
+        }
+
+        p {
+          font-family: $roboto;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 22px;
+          line-height: 26px;
+          color: $Bg-dark;
+          margin-bottom: 7%;
+          margin-top: 6%;
+        }
+        .counter {
+          display: flex;
+          justify-content: space-around;
+          border: solid black;
+          border-width: 2px;
+          width: 175px;
+          height: 50px;
+          p {
+            font-family: $roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 26px;
+            color: $Bg-dark;
+            margin: 0;
+            align-self: center;
+          }
+          button {
+            font-size: 32px;
+            border: none;
+            background-color: transparent;
+            align-self: center;
+            color: $Bg-dark;
+          }
+        }
+      }
+      h3 {
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 33px;
+        letter-spacing: 1.65px;
+        color: $Bg-dark;
+        padding-top: 20%;
+        padding-bottom: 43%;
+        display: flex;
+        justify-content: space-between;
+      }
+      .butt {
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 26px;
+        display: flex;
+        letter-spacing: 2px;
+        justify-content: center;
+        color: $White;
+        border: none;
+        background-color: $Bg-dark;
+        width: 175px;
+        height: 50px;
+        align-items: center;
+      }
+    }
+  }
+}
+.parallax {
+  height: 30vw;
+  width: 100%;
+  padding-bottom: 3%;
+  padding-top: 3%;
+}
+.paral {
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+
+  background-image: url(images2/parallax.jpg);
+
+  height: 100%;
+  width: 100%;
+}
+footer {
+  width: 100%;
+  background-color: $Bg-dark;
+  .container {
+    .top {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 4%;
+      .Logo {
+        display: flex;
+        padding-top: 5%;
+        //logo
+        img {
+          height: 26px;
+        }
+        //LOUVRE
+        h1 {
+          margin-top: 0;
+          width: 125px;
+          height: 31px;
+          margin-left: 25px;
+          font-family: $forum;
+          font-weight: 400;
+          font-size: 28px;
+          letter-spacing: 5px;
+          color: $White;
+        }
+      }
+    }
+    .list {
+      margin-top: 6%;
+      width: 24.5%;
+      height: 128px;
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 100%;
+        span {
+          display: grid;
+          gap: 15%;
+        }
+      }
+    }
+
+    a {
+      letter-spacing: 2px;
+      color: $White;
+      text-decoration: none;
+    }
+    li {
+      display: inline;
+      font-family: $roboto;
+      font-weight: 200;
+      font-size: $text;
+    }
+    .socialnet {
+      width: 300px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 11%;
+    }
+  }
+}
+.line {
+  width: 100%;
+  background-color: $White;
+  height: 2px;
+}
+.container {
+  .bottom {
+    height: 5.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      text-decoration: none;
+    }
+    p {
+      font-family: $roboto;
+      font-style: normal;
+      font-weight: 200;
+      font-size: $text;
+
+      letter-spacing: 2px;
+
+      color: $White;
+    }
+  }
+}
+
+// 1570px
+@media all and (max-width: 1570px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media all and (max-width: 1024px) {
+  footer {
+    .container {
+      .top {
+        li {
+          font-size: 2.15vw;
+        }
+      }
+    }
+  }
+  .container {
+    .tickets {
+      .center {
+        h3 {
+          padding-bottom: 0;
+        }
+        .left {
+          .type {
+            display: none;
+          }
+          .picture {
+            width: 63vw;
+          }
+        }
+        .right {
+          position: relative;
+          .butt {
+            position: absolute;
+            bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 768px) {
+  footer {
+    .container {
+      .top {
+        flex-direction: column;
+        .list {
+          align-self: flex-end;
+          width: 40%;
+          margin-top: 0;
+        }
+        .socialnet {
+          align-self: flex-end;
+          width: 40%;
+        }
+      }
+    }
+  }
+  .container {
+    .tickets {
+      .center {
+        h3 {
+          margin-bottom: 100px;
+        }
+        .left {
+          .picture {
+            width: 100%;
+          }
+        }
+      }
+
+      .right {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+.line {
+  width: 100%;
+  background-color: $White;
+  height: 2px;
+}
+.container {
+  .bottom {
+    p {
+      font-size: 1.5vw;
+    }
+  }
+  .container {
+    .tickets {
+      .center {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 420px) {
+  footer {
+    .container {
+      .top {
+        flex-direction: column;
+        li {
+          width: 100%;
+          text-align: start;
+        }
+        .list {
+          margin-top: 10%;
+          display: flex;
+          align-self: center;
+          width: 100%;
+          height: 15vw;
+          flex-direction: row;
+          ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            width: 100%;
+            span {
+              display: flex;
+              width: 100%;
+              height: 30px;
+              justify-content: space-between;
+              gap: 30%;
+            }
+          }
+        }
+        .socialnet {
+          align-self: center;
+          width: 60%;
+        }
+      }
+    }
+    .line {
+      width: 100%;
+      background-color: $White;
+      height: 2px;
+    }
+    .container {
+      .bottom {
+        p {
+          font-size: 1.5vw;
+        }
+      }
+    }
+  }
+  .container {
+    .tickets {
+      .center {
+        flex-direction: column;
+        .left {
+          .picture {
+            position: relative;
+            width: 470px;
+            height: 160px;
+            img {
+              position: absolute;
+              left: 50%;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              transform: translate(-50%, 50%);
+              bottom: 50%;
+            }
+          }
+        }
+        .right {
+          align-self: center;
+          h2,
+          p,
+          h3 {
+            font-size: 16px;
+            margin: 10px;
+            padding: 0;
+            text-align: center;
+          }
+          .butt {
+            position: relative;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
