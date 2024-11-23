@@ -15,7 +15,9 @@ function main() {
     menu.style.display = "inline-flex";
     closemenu.style.display = "none";
   }
-
+menu.onclick = openMenu;
+  closemenu.onclick = closeMenu;
+ 
   var slider = document.querySelector(".slider");
   var sliderList = slider.querySelector(".slider-list");
   var sliderTrack = slider.querySelector(".slider-track");
@@ -69,7 +71,6 @@ function main() {
     slider1.style.left = `${percentage}%`;
     imgLeft.style.clipPath = `inset(0 ${100 - percentage}% 0 0)`;
   });
-  close-menu.onclick = closeMenu();
-  menu.onclick = openMenu();
+  
 }
 main();
