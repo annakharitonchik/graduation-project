@@ -592,7 +592,7 @@ footer {
     svg {
       display: block;
     }
-    .closemenu {
+    #closemenu {
       display: none;
     }
     .menu {
@@ -769,7 +769,7 @@ footer {
       right: 0;
       top: 13vw;
       z-index: 5;
-      display: flex;
+      display: none;
       flex-direction: column;
       align-items: center;
 
@@ -893,7 +893,7 @@ footer {
 @media all and (max-width: 420px) {
   .Navigation {
     .list {
-      display: flex;
+      display: none;
       ul {
         li {
           font-size: 16px;

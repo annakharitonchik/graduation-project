@@ -160,12 +160,7 @@ main .right {
 main .right .gradient {
   width: 100%;
   height: 40vw;
-  background: linear-gradient(
-    90deg,
-    #000000 0%,
-    rgba(0, 0, 0, 0.5) 16.19%,
-    rgba(0, 0, 0, 0) 31%
-  );
+  background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 31%);
   z-index: 1;
   position: absolute;
 }
@@ -544,7 +539,7 @@ footer .container .bottom p {
   .Navigation svg {
     display: block;
   }
-  .Navigation .close-menu {
+  .Navigation #closemenu {
     display: none;
   }
   .Navigation .menu {
@@ -594,12 +589,7 @@ footer .container .bottom p {
     font-size: 2vw;
   }
   main .right .gradient {
-    background: linear-gradient(
-      90deg,
-      #000000 4%,
-      rgba(0, 0, 0, 0.5) 16.19%,
-      rgba(0, 0, 0, 0) 31%
-    );
+    background: linear-gradient(90deg, #000000 4%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 31%);
   }
   .Picture-explore .content {
     flex-direction: column;
@@ -656,7 +646,7 @@ footer .container .bottom p {
     display: none;
   }
   main .right .img {
-    position: relative;
+    img-position: relative;
   }
   main .slides {
     width: 100%;
@@ -688,7 +678,7 @@ footer .container .bottom p {
     right: 0;
     top: 13vw;
     z-index: 5;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
   }
@@ -785,7 +775,7 @@ footer .container .bottom p {
 }
 @media all and (max-width: 420px) {
   .Navigation .list {
-    display: flex;
+    display: none;
   }
   .Navigation .list ul li {
     font-size: 16px;

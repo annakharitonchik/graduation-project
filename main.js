@@ -2,7 +2,7 @@ function main() {
   function openMenu() {
     var list = document.getElementById("list");
     var menu = document.getElementById("menu");
-    var closemenu = document.getElementById("close-menu");
+    var closemenu = document.getElementById("closemenu");
     list.style.display = "block";
     menu.style.display = "none";
     closemenu.style.display = "block";
@@ -10,14 +10,14 @@ function main() {
   function closeMenu() {
     var list = document.getElementById("list");
     var menu = document.getElementById("menu");
-    var closemenu = document.getElementById("close-menu");
+    var closemenu = document.getElementById("closemenu");
     list.style.display = "none";
     menu.style.display = "inline-flex";
     closemenu.style.display = "none";
   }
-menu.onclick = openMenu;
+  menu.onclick = openMenu;
   closemenu.onclick = closeMenu;
- 
+
   var slider = document.querySelector(".slider");
   var sliderList = slider.querySelector(".slider-list");
   var sliderTrack = slider.querySelector(".slider-track");
@@ -71,6 +71,5 @@ menu.onclick = openMenu;
     slider1.style.left = `${percentage}%`;
     imgLeft.style.clipPath = `inset(0 ${100 - percentage}% 0 0)`;
   });
-  
 }
 main();
