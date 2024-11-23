@@ -656,7 +656,7 @@ footer .container .bottom p {
     display: none;
   }
   main .right .img {
-    img-position: relative;
+    position: relative;
   }
   main .slides {
     width: 100%;
