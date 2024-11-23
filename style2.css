@@ -137,9 +137,6 @@
   display: flex;
   justify-content: space-between;
 }
-.container .tickets .center a {
-  text-decoration: none;
-}
 .container .tickets .center .butt {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -155,6 +152,9 @@
   width: 175px;
   height: 50px;
   align-items: center;
+}
+.container .tickets .center a {
+  text-decoration: none;
 }
 
 .parallax {
