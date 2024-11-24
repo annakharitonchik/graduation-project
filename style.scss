@@ -537,6 +537,10 @@ footer {
         display: flex;
         justify-content: space-between;
         margin-top: 11%;
+        i {
+          color: $White;
+          font-size: 25px;
+        }
       }
     }
   }
@@ -808,8 +812,9 @@ footer {
         padding-bottom: 3vw;
         margin-left: auto;
         margin-right: auto;
-        img {
-          width: 6.25vw;
+        i {
+          font-size: 5vw;
+          color: $White;
         }
       }
     }

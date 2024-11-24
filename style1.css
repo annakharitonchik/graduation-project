@@ -169,6 +169,10 @@ footer .container .socialnet {
   justify-content: space-between;
   margin-top: 11%;
 }
+footer .container .socialnet i {
+  font-size: 25px;
+  color: #ffffff;
+}
 
 .line {
   width: 100%;

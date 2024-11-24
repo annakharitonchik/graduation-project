@@ -160,12 +160,7 @@ main .right {
 main .right .gradient {
   width: 100%;
   height: 40vw;
-  background: linear-gradient(
-    90deg,
-    #000000 0%,
-    rgba(0, 0, 0, 0.5) 16.19%,
-    rgba(0, 0, 0, 0) 31%
-  );
+  background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 31%);
   z-index: 1;
   position: absolute;
 }
@@ -502,6 +497,10 @@ footer .container .top .socialnet {
   justify-content: space-between;
   margin-top: 11%;
 }
+footer .container .top .socialnet i {
+  color: #ffffff;
+  font-size: 25px;
+}
 footer .line {
   width: 100%;
   background-color: #ffffff;
@@ -579,7 +578,7 @@ footer .container .bottom p {
     font-size: 1.95vw;
   }
   .Navigation .list ul a::after {
-    content: url(images/arrowright.svg);
+    content: url(/images/arrowright.svg);
     position: relative;
     left: 10px;
   }
@@ -594,12 +593,7 @@ footer .container .bottom p {
     font-size: 2vw;
   }
   main .right .gradient {
-    background: linear-gradient(
-      90deg,
-      #000000 4%,
-      rgba(0, 0, 0, 0.5) 16.19%,
-      rgba(0, 0, 0, 0) 31%
-    );
+    background: linear-gradient(90deg, #000000 4%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 31%);
   }
   .Picture-explore .content {
     flex-direction: column;
@@ -656,7 +650,7 @@ footer .container .bottom p {
     display: none;
   }
   main .right .img {
-    position: relative;
+    img-position: relative;
   }
   main .slides {
     width: 100%;
@@ -726,8 +720,9 @@ footer .container .bottom p {
     margin-left: auto;
     margin-right: auto;
   }
-  .Navigation .list .socialnet img {
-    width: 6.25vw;
+  .Navigation .list .socialnet i {
+    font-size: 5vw;
+    color: #ffffff;
   }
   .Virtual-tour h1 {
     font-size: 8.2vw;

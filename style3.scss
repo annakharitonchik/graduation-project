@@ -147,6 +147,10 @@ footer {
       display: flex;
       justify-content: space-between;
       margin-top: 11%;
+      i {
+        font-size: 25px;
+        color: $White;
+      }
     }
   }
   .line {

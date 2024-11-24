@@ -175,6 +175,10 @@ footer {
       display: flex;
       justify-content: space-between;
       margin-top: 11%;
+      i {
+        font-size: 25px;
+        color: $White;
+      }
     }
   }
 }
@@ -287,7 +291,7 @@ footer {
             justify-content: space-between;
             height: 100%;
             width: 100%;
-            
+
             span {
               display: flex;
               width: 100%;
